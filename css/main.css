@@ -1,6 +1,7 @@
 :root {
     --vermelho: #e50914;
     --preto: #141414;
+    --branco: #fff;
 }
 
 * {
@@ -12,6 +13,8 @@
 body {
     background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: var(--branco);
 }
 
 header .container {
@@ -24,7 +27,7 @@ header .logo {
     margin-left: 5px;
     color: var(--vermelho);
     font-family: 'Arial Black', Times;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 header nav a {
@@ -35,4 +38,25 @@ header nav a {
 
 header nav a:hover {
     color: #fff;
+}
+
+/* Filme Principal */
+
+.filme-principal {
+    font-size: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) 100%), url('/images/capa-znation.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 40px;
 }
